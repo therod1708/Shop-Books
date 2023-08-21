@@ -1,0 +1,68 @@
+.conteudo-novidades {
+    background-color: var(--branco);
+    padding: 1.3rem;
+}
+
+.novidades__subtitulo {
+    background: var(--azul-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.novidades__paragrafo {
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: var(--azul);
+}
+
+.pesquisa-novidade {
+    background-color: transparent;
+    border: 1px solid var(--azul);
+    border-radius: 2rem;
+    color: var(--azul);
+    padding: 10px;
+    width: 95%;
+}
+
+.pesquisa-novidade::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 4rem;
+    background: url("../img/Email.svg") no-repeat;  
+}
+
+@media screen and (min-width: 1024px) {
+    .conteudo-novidades {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    .pesquisa-novidade {
+        width: 30%;
+    }
+    .novidades__subtitulo {
+        font-size: 24px;
+    }
+    .novidades__paragrafo {
+        margin-top: 2rem;
+    }
+    .contato__descricao {
+        margin-right: 3rem;
+        width: 30%; 
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .conteudo-novidades {
+        padding: 3rem 20vw /*viewport width*/
+    }
+        
+    }
